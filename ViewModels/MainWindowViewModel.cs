@@ -1,12 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
 namespace Traceability.ViewModels
-//{
-//    public partial class MainWindowViewModel : ViewModelBase
-//    {
-//        public string Greeting { get; } = "Welcome to Avalonia!";
-//    }
-//}
 {
     // Główny ViewModel – trzyma menu i aktualny widok (CurrentView).
     public class MainWindowViewModel : ViewModelBase

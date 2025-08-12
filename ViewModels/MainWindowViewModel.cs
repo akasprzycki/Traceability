@@ -27,8 +27,9 @@ namespace Traceability.ViewModels
         {
             // Tworzymy instancje ViewModeli (możesz w przyszłości wstrzykiwać serwisy)
             var serverVM = new ServerViewModel(new Services.FileService(), new Services.DatabaseService());
-            var structureVM = new PlaceholderViewModel("Struktura (TODO)");   // zastępnik
-            var devicesVM = new PlaceholderViewModel("Urządzenia (TODO)");     // zastępnik
+            var structureVM = new StructureViewModel();
+            var devicesVM = new DevicesViewModel();
+            var templateVM = new PlaceholderViewModel("Template (TODO)");     // zastępnik
 
             MenuItems.Add(new MenuItemViewModel("Serwer", new RelayCommand(_ => CurrentView = serverVM)));
             MenuItems.Add(new MenuItemViewModel("Struktura", new RelayCommand(_ => CurrentView = structureVM)));

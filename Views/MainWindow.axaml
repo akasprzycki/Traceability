@@ -2,25 +2,25 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:Traceability.ViewModels"
         x:Class="Traceability.Views.MainWindow"
-        x:DataType="vm:MainWindowViewModel"
         Title="Traceability"
         Width="1000" Height="700">
 
 	<DockPanel>
-
-		<Border DockPanel.Dock="Left" Width="220" Background="#2b2b2b" Margin="8" Padding="6">
+		<!-- Lewy panel menu -->
+		<Border DockPanel.Dock="Left" Width="220" Background="#2b2b2b" Padding="6">
 			<ItemsControl Items="{Binding MenuItems}">
 				<ItemsControl.ItemTemplate>
-					<DataTemplate x:DataType="vm:MenuItemViewModel">
+					<DataTemplate>
 						<Button Content="{Binding Title}"
-								Command="{Binding Command}"
-								Margin="4"
-								Height="36"/>
+                                Command="{Binding Command}"
+                                Margin="4"
+                                Height="36"/>
 					</DataTemplate>
 				</ItemsControl.ItemTemplate>
 			</ItemsControl>
 		</Border>
 
+		<!-- Główny obszar -->
 		<ContentControl Content="{Binding CurrentView}" Margin="10"/>
 	</DockPanel>
 

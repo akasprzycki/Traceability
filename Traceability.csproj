@@ -29,4 +29,16 @@
   <ItemGroup>
     <Folder Include="Resources\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\DevicesView.axaml.cs">
+      <DependentUpon>DevicesView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ServerView.axaml.cs">
+      <DependentUpon>ServerView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StructureView.axaml.cs">
+      <DependentUpon>StructureView.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Traceability.Views;
 
-public partial class ServerView : UserControl
+public partial class DevicesView : UserControl
 {
-    public ServerView()
+    public DevicesView()
     {
         InitializeComponent();
     }

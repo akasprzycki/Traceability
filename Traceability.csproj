@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <AvaloniaResource Include="Assets\**" />
+    <AvaloniaResource Include="App.axaml" />
+	<AvaloniaResource Include="Views\*.axaml" />
+	<AvaloniaResource Include="Views\**\*.axaml" />
+	<AvaloniaResource Include="Assets\**" />
   </ItemGroup>
 
   <ItemGroup>
